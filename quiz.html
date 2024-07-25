@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/formbold.css" />
+    <title>Healthcare Feedback Form</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if the referrer is the specific URL
+            if (document.referrer === 'https://formbold.com/s/3Kgqr') {
+                // Redirect to home.html
+                window.location.href = 'home.html';
+            }
+        });
+    </script>
+    <style>
+        .final-screen {
+            display: none;
+        }
+
+      
+
+        .final-screen {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .final-screen h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .final-screen .cta-button,
+        .final-screen .follow-up-button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .final-screen .follow-up-button {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="formbold-builder-form themeOne">
+            <form enctype="multipart/form-data" action="https://formbold.com/s/3Kgqr" method="POST"
+                class="mx-auto w-full max-w-[570px] rounded-[10px] border border-stroke bg-white p-10 themeOne">
+                <div class="SortableItem fb-builder-item">
+                    <h3 class="static !font-bold text-xl font-semibold leading-tight text-black sm:text-[28px]">
+                        Is MyDoctor Right for You?
+                    </h3>
+                </div>
+                <div class="SortableItem fb-builder-item">
+                    <p class="static text-base text-body-color">
+                        Struggling with healthcare costs? Take our quick quiz to see how
+                        MyDoctor can help you.
+                    </p>
+                </div>
+                <div class="SortableItem fb-builder-item">
+                    <div class="mb-4">
+                        <label class="form-label mb-4 text-base text-black">
+                            <span>1. What is your biggest concern regarding healthcare? </span>
+                            <span class="label-required pl-1 text-red-400">*</span>
+                        </label>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="option_1_A" class="custom-control-input fb-builder-radio sr-only"
+                                name="1. What is your biggest concern regarding healthcare?" type="radio"
+                                value="A. High cost of GP visits" required="" />
+                            <label class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="option_1_A" onclick="showFeedbackQuestion1('A')">
+                                <span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke">
+                                    <span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"></span>
+                                </span>
+                                A. High cost of GP visits
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="option_1_B" class="custom-control-input fb-builder-radio sr-only"
+                                name="1. What is your biggest concern regarding healthcare?" type="radio"
+                                value="B. Expensive medication" required="" />
+                            <label class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="option_1_B" onclick="showFeedbackQuestion1('B')">
+                                <span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke">
+                                    <span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"></span>
+                                </span>
+                                B. Expensive medication
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="option_1_C" class="custom-control-input fb-builder-radio sr-only"
+                                name="1. What is your biggest concern regarding healthcare?" type="radio"
+                                value="C. Lack of access to eye tests and flu vaccines" required="" />
+                            <label class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="option_1_C" onclick="showFeedbackQuestion1('C')">
+                                <span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke">
+                                    <span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"></span>
+                                </span>
+                                C. Lack of access to eye tests and flu vaccines
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="option_1_D" class="custom-control-input fb-builder-radio sr-only"
+                                name="1. What is your biggest concern regarding healthcare?" type="radio"
+                                value="D. Uncertainty about medical transportation in emergencies" required="" />
+                            <label class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="option_1_D" onclick="showFeedbackQuestion1('D')">
+                                <span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke">
+                                    <span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"></span>
+                                </span>
+                                D. Uncertainty about medical transportation in emergencies
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="option_1_E" class="custom-control-input fb-builder-radio sr-only"
+                                name="1. What is your biggest concern regarding healthcare?" type="radio"
+                                value="E. Needing 24/7 medical advice and trauma counseling" required="" />
+                            <label class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="option_1_E" onclick="showFeedbackQuestion1('E')">
+                                <span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke">
+                                    <span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"></span>
+                                </span>
+                                E. Needing 24/7 medical advice and trauma counseling
+                            </label>
+                        </div>
+                    </div>
+                    <div id="feedback_1" class="feedback mt-4"></div>
+                </div>
+                <div class="SortableItem fb-builder-item">
+                    <div class="mb-4">
+                        <label class="form-label mb-4 text-base text-black"><span>2. How often do you visit a GP in a
+                                year?</span><span class="label-required pl-1 text-red-400">*</span></label>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_51BB99C1-0E21-44BB-8F31-2506E746FE6B"
+                                class="custom-control-input fb-builder-radio sr-only"
+                                name="2. How often do you visit a GP in a year?" type="radio"
+                                value="A. Rarely (0-2 times)" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_51BB99C1-0E21-44BB-8F31-2506E746FE6B"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion2('A')"></span></span>A.
+                                Rarely (0-2 times)</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_74B0DEE6-900E-4CDB-B78F-8ED6D9E4970B"
+                                class="custom-control-input fb-builder-radio sr-only"
+                                name="2. How often do you visit a GP in a year?" type="radio"
+                                value="B. Occasionally (3-5 times)" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_74B0DEE6-900E-4CDB-B78F-8ED6D9E4970B"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion2('B')"></span></span>B.
+                                Occasionally (3-5 times)</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_5A304DFE-3199-4B47-9183-0043E4BCD2D7"
+                                class="custom-control-input fb-builder-radio sr-only"
+                                name="2. How often do you visit a GP in a year?" type="radio"
+                                value="C. Frequently (6-10 times)" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_5A304DFE-3199-4B47-9183-0043E4BCD2D7"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion2('C')"></span></span>C.
+                                Frequently (6-10 times)</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_D8EEDC83-2A40-434D-91E4-35708B98F022"
+                                class="custom-control-input fb-builder-radio sr-only"
+                                name="2. How often do you visit a GP in a year?" type="radio" required=""
+                                value="D. Very frequently (11+ times)" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_D8EEDC83-2A40-434D-91E4-35708B98F022"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion2('D')"></span></span>D.
+                                Very frequently (11+ times)</label>
+                        </div>
+                    </div>
+                    <div id="feedback_2" class="feedback mt-4"></div>
+                </div>
+                <div class="SortableItem fb-builder-item">
+                    <div class="mb-4">
+                        <label class="form-label mb-4 text-base text-black"><span>3. Do you find it challenging to
+                                afford over-the-counter
+                                medication?</span><span class="label-required pl-1 text-red-400">*</span></label>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_B809D912-1F68-4EFD-82D1-1C31CEA009A9"
+                                class="custom-control-input fb-builder-radio sr-only"
+                                name="3. Do you find it challenging to afford over-the-counter medication?" type="radio"
+                                value="A. Yes" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_B809D912-1F68-4EFD-82D1-1C31CEA009A9"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion3('A')"></span></span>A.
+                                Yes</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_17CD9D34-4079-4DF5-8F43-EBA43D34F037"
+                                class="custom-control-input fb-builder-radio sr-only"
+                                name="3. Do you find it challenging to afford over-the-counter medication?" type="radio"
+                                value="B. No" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_17CD9D34-4079-4DF5-8F43-EBA43D34F037"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion3('B')"></span></span>B.
+                                No</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_4821E07D-21CF-4DF1-99A0-2AD3C041CE8B"
+                                class="custom-control-input fb-builder-radio sr-only"
+                                name="3. Do you find it challenging to afford over-the-counter medication?" type="radio"
+                                value="C. Sometimes" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_4821E07D-21CF-4DF1-99A0-2AD3C041CE8B"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion3('C')"></span></span>C.
+                                Sometimes</label>
+                        </div>
+                    </div>
+                    <div id="feedback_3" class="feedback mt-4"></div>
+                </div>
+                <div class="SortableItem fb-builder-item">
+                    <div class="mb-4">
+                        <label class="form-label mb-4 text-base text-black"><span> 4. Do you need access to eye tests
+                                and flu vaccines?</span><span class="label-required pl-1 text-red-400">*</span></label>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_38EA99EE-B08D-41FF-98F4-88D27A260865"
+                                class="custom-control-input fb-builder-radio sr-only"
+                                name="4. Do you need access to eye tests and flu vaccines?" type="radio"
+                                value="A. Yes, regularly" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_38EA99EE-B08D-41FF-98F4-88D27A260865"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion4('A')"></span></span>A.
+                                Yes, regularly</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_FE063C30-834C-4839-BDF4-64322B4B1BA9"
+                                class="custom-control-input fb-builder-radio sr-only"
+                                name="4. Do you need access to eye tests and flu vaccines?" type="radio"
+                                value="B. Occasionally" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_FE063C30-834C-4839-BDF4-64322B4B1BA9"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion4('B')"></span></span>B.
+                                Occasionally</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_68FE0061-897C-404A-AC3F-214EB00C3EDD"
+                                class="custom-control-input fb-builder-radio sr-only"
+                                name="4. Do you need access to eye tests and flu vaccines?" type="radio"
+                                value="C. No, but I might in the future" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_68FE0061-897C-404A-AC3F-214EB00C3EDD"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion4('C')"></span></span>C.
+                                No, but I might in the future</label>
+                        </div>
+                    </div>
+                    <div id="feedback_4" class="feedback mt-4"></div>
+                </div>
+                <div class="SortableItem fb-builder-item">
+                    <div class="mb-4">
+                        <label class="form-label mb-4 text-base text-black"><span>5. How important is it to have 24/7
+                                access to medical advice and
+                                trauma counseling?</span><span class="label-required pl-1 text-red-400">*</span></label>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_3611C7A2-5C70-4E23-8B25-8F88DCA69428"
+                                class="custom-control-input fb-builder-radio sr-only" name="5. How important is it to have 24/7 access to medical advice and
+                  trauma counseling?" type="radio" value="A. Very important" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_3611C7A2-5C70-4E23-8B25-8F88DCA69428"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion5('A')"></span></span>A.
+                                Very important</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_92E79FE7-C64A-40FB-A074-A3CA4537CB32"
+                                class="custom-control-input fb-builder-radio sr-only" name="5. How important is it to have 24/7 access to medical advice and
+                  trauma counseling?" type="radio" value="B. Somewhat important" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_92E79FE7-C64A-40FB-A074-A3CA4537CB32"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion5('B')"></span></span>B.
+                                Somewhat important</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_3AD64EBC-BC57-4804-9D37-10A2F53ACA1B"
+                                class="custom-control-input fb-builder-radio sr-only" name="5. How important is it to have 24/7 access to medical advice and
+                  trauma counseling?" type="radio" value="C. Not important" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_3AD64EBC-BC57-4804-9D37-10A2F53ACA1B"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion5('C')"></span></span>C.
+                                Not important</label>
+                        </div>
+                    </div>
+                    <div id="feedback_5" class="feedback mt-4"></div>
+                </div>
+                <div class="SortableItem fb-builder-item">
+                    <div class="mb-4">
+                        <label class="form-label mb-4 text-base text-black"><span>6. How much are you currently spending
+                                on healthcare per
+                                month?</span><span class="label-required pl-1 text-red-400">*</span></label>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_3367218C-8187-4C06-A2B9-D6CFD8ED0D0F"
+                                class="custom-control-input fb-builder-radio sr-only" name="6. How much are you currently spending on healthcare per
+                  month?" type="radio" value="A. Less than R500" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_3367218C-8187-4C06-A2B9-D6CFD8ED0D0F"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onchange="checkCompletion()"
+                                        onclick="showFeedbackQuestion6('A')"></span></span>A.
+                                Less than R500</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_7B81BD28-8668-4197-BE61-FAF775302F8E"
+                                class="custom-control-input fb-builder-radio sr-only" name="6. How much are you currently spending on healthcare per
+                  month?" type="radio" value="B. R500 - R1,000" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_7B81BD28-8668-4197-BE61-FAF775302F8E"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion6('B')"></span></span>B.
+                                R500 - R1,000</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_radiobuttons_option_305F4C2E-70FA-43DA-B512-EA7934AAC6D0"
+                                class="custom-control-input fb-builder-radio sr-only" name="6. How much are you currently spending on healthcare per
+                  month?" type="radio" value="C. R1,000 - R2,000" required="" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_radiobuttons_option_305F4C2E-70FA-43DA-B512-EA7934AAC6D0"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion6('C')"></span></span>C.
+                                R1,000 - R2,000</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2.5 last:mb-0">
+                            <input id="fid_preview_408A7BA6-7C67-4950-8193-0890034A56BA"
+                                class="custom-control-input fb-builder-radio sr-only" name="6. How much are you currently spending on healthcare per
+                  month?" type="radio" required="" value="D. More than R2,000" /><label
+                                class="custom-control-label relative flex cursor-pointer text-base text-black"
+                                for="fid_preview_408A7BA6-7C67-4950-8193-0890034A56BA"><span
+                                    class="relative mr-2.5 mt-0.5 block h-[18px] w-[18px] rounded-full border border-stroke"><span
+                                        class="absolute left-0 top-0 h-full w-full rounded-full border-4 border-primary opacity-0"
+                                        onclick="showFeedbackQuestion6('D')"></span></span>D.
+                                More than R2,000</label>
+                        </div>
+                    </div>
+                    <div id="feedback_6" class="feedback mt-4"></div>
+                </div>
+                <div class="final-screen">
+                    <h2>Based on your answers, MyDoctor Membership is a perfect solution for your healthcare needs!
+                        Affordable, comprehensive, and always there for you.</h2>
+                    <!-- <a href="form.html" class="inline-flex cursor-pointer items-center justify-center rounded border border-primary bg-primary px-8 py-2 text-base font-medium text-white hover:bg-opacity-90">Leave your contact details to learn more
+                        and sign up for MyDoctor Membership.</a> -->
+                </div>
+                <!-- Add other questions here -->
+
+                <div class="btn-toolbar flex items-center space-x-3">
+                    <input type="submit"
+                    id="submit-button"
+                        class="inline-flex cursor-pointer items-center justify-center rounded border border-primary bg-primary px-8 py-2 text-base font-medium text-white hover:bg-opacity-90"
+                        value="Submit" />
+                    <!-- <input href="your-quiz-link.html" class="inline-flex cursor-pointer items-center justify-center rounded border border-primary bg-primary px-8 py- text-base font-medium text-white hover:bg-opacity-90" id="submit-button" value="Submit your results and Get Started!" type="submit"/> -->
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    <script>
+        let questionsAnswered = {
+            1: false,
+            2: false,
+            3: false,
+            4: false,
+            5: false,
+            6: false
+        };
+        function showFeedbackQuestion1(option) {
+            const feedbacks = {
+                'A': 'MyDoctor Membership offers affordable GP visits, making healthcare more accessible and cost-effective for you.',
+                'B': 'With MyDoctor, over-the-counter medication is included in your membership, reducing your expenses.',
+                'C': 'Eye tests and flu vaccines are part of the MyDoctor benefits, ensuring you get the preventive care you need.',
+                'D': 'MyDoctor provides medical transportation services, giving you peace of mind in emergencies.',
+                'E': 'MyDoctor Membership includes 24/7 medical advice and trauma counseling, supporting you whenever you need it.'
+            };
+            document.getElementById('feedback_1').innerText = feedbacks[option];
+            questionsAnswered[1] = true;
+            checkAllQuestionsAnswered();
+        }
+
+        function showFeedbackQuestion2(option) {
+            const feedbacks = {
+                'A': 'Even with occasional visits, MyDoctor Membership saves you money with each GP visit included.',
+                'B': 'Even with occasional visits, MyDoctor Membership saves you money with each GP visit included.',
+                'C': 'With frequent visits, MyDoctor Membership provides substantial savings on your healthcare costs.',
+                'D': 'With frequent visits, MyDoctor Membership provides substantial savings on your healthcare costs.'
+            };
+            document.getElementById('feedback_2').innerText = feedbacks[option];
+            questionsAnswered[2] = true;
+            checkAllQuestionsAnswered();
+        }
+
+        function showFeedbackQuestion3(option) {
+            const feedbacks = {
+                'A': 'MyDoctor Membership covers over-the-counter medication, easing the financial burden up to ... per year.',
+                'B': 'Even if you don\'t currently struggle, having MyDoctor ensures you are covered in the future.',
+                'C': 'MyDoctor Membership covers over-the-counter medication, easing the financial burden up to ... per year.'
+            };
+            document.getElementById('feedback_3').innerText = feedbacks[option];
+            questionsAnswered[3] = true;
+            checkAllQuestionsAnswered();
+        }
+
+        function showFeedbackQuestion4(option) {
+            const feedbacks = {
+                'A': 'Access to eye tests and flu vaccines is included in MyDoctor Membership.',
+                'B': 'Access to eye tests and flu vaccines is included in MyDoctor Membership.',
+                'C': 'Having MyDoctor Membership ensures you\'re covered whenever you need these services.'
+            };
+            document.getElementById('feedback_4').innerText = feedbacks[option];
+            questionsAnswered[4] = true;
+            checkAllQuestionsAnswered();
+        }
+
+        function showFeedbackQuestion5(option) {
+            const feedbacks = {
+                'A': 'MyDoctor Membership offers round-the-clock medical advice and trauma counseling, providing continuous support.',
+                'B': 'Having occasional access is beneficial, and MyDoctor Membership offers this convenience.',
+                'C': 'Even if not important now, having access to these services ensures you are prepared for any future needs.'
+            };
+            document.getElementById('feedback_5').innerText = feedbacks[option];
+            questionsAnswered[5] = true;
+            checkAllQuestionsAnswered();
+        }
+
+        function showFeedbackQuestion6(option) {
+            const feedbacks = {
+                'A': 'MyDoctor Membership can potentially lower your monthly healthcare expenses.',
+                'B': 'MyDoctor Membership can potentially lower your monthly healthcare expenses.',
+                'C': 'By switching to MyDoctor, you can save significantly on your monthly healthcare costs.',
+                'D': 'By switching to MyDoctor, you can save significantly on your monthly healthcare costs.'
+            };
+            document.getElementById('feedback_6').innerText = feedbacks[option];
+            questionsAnswered[6] = true;
+            checkAllQuestionsAnswered();
+        }
+
+        function checkAllQuestionsAnswered() {
+            const allAnswered = Object.values(questionsAnswered).every(answered => answered);
+            document.querySelector('.final-screen').style.display = allAnswered ? 'block' : 'none';
+            document.querySelector('.btn-toolbar').style.display = allAnswered ? 'block' : 'none';
+        }
+        document.getElementById('submit-button').onclick = function() {
+            // Clear all form fields
+            document.getElementById('feedbackForm').reset();
+
+            // Hide form and show the final screen
+            document.querySelector('.formbold-builder-form').style.display = 'none';
+            document.querySelector('.final-screen').style.display = 'block';
+        };
+    </script>
+
+</body>
+
+</html>
