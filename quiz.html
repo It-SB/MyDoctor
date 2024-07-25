@@ -392,12 +392,22 @@
                 <!-- Add other questions here -->
 
                 <div class="btn-toolbar flex items-center space-x-3">
+                    
                     <input type="submit"
                     id="submit-button"
                         class="inline-flex cursor-pointer items-center justify-center rounded border border-primary bg-primary px-8 py-2 text-base font-medium text-white hover:bg-opacity-90"
                         value="Submit" />
-                    <!-- <input href="your-quiz-link.html" class="inline-flex cursor-pointer items-center justify-center rounded border border-primary bg-primary px-8 py- text-base font-medium text-white hover:bg-opacity-90" id="submit-button" value="Submit your results and Get Started!" type="submit"/> -->
+                        <input type="button"
+                    id="submit-button"
+                    class="inline-flex cursor-pointer items-center justify-content-end rounded  border-secondary bg-third   text-base font-medium text-white hover:bg-opacity-90"
+                        value="                                 " />
+                        <button onclick="window.location.href='form.html';" class="inline-flex cursor-pointer items-center rounded border border-primary bg-secondary px-8 py-2 text-base font-medium text-white hover:bg-opacity-90" id="submit-button">
+                            Request Call Back
+                          </button>
+                    <!-- <input href="your-quiz-link.html" class="inline-flex cursor-pointer items-center justify-content-end rounded border border-primary bg-primary px-2 py-2 text-base font-medium text-white hover:bg-opacity-90" id="submit-button" value="Request Call Back"/> -->
                 </div>
+                
+                
             </form>
 
 
@@ -494,6 +504,7 @@
             // Hide form and show the final screen
             document.querySelector('.formbold-builder-form').style.display = 'none';
             document.querySelector('.final-screen').style.display = 'block';
+            document.getElementById('submit-button').style.display = 'block';
         };
     </script>
 
