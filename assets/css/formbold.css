@@ -944,6 +944,9 @@ video {
 .font-medium {
   font-weight: 500;
 }
+.font-small {
+    font-weight: 300;
+  }
 
 .font-semibold {
   font-weight: 600;
