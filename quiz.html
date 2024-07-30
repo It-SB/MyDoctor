@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="assets/css/formbold.css" />
     <title>Healthcare Feedback Form</title>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Check if the referrer is the specific URL
+        document.addEventListener('DOMContentLoaded', function () {
             if (document.referrer === 'https://formbold.com/s/3Kgqr') {
-                // Redirect to home.html
                 window.location.href = 'home.html';
             }
         });
@@ -20,7 +18,7 @@
             display: none;
         }
 
-      
+
 
         .final-screen {
             text-align: center;
@@ -384,30 +382,30 @@
                     <div id="feedback_6" class="feedback mt-4"></div>
                 </div>
                 <div class="final-screen">
-                    <h2>Based on your answers, MyDoctor Membership is a perfect solution for your healthcare needs!
-                        Affordable, comprehensive, and always there for you.</h2>
-                    <!-- <a href="form.html" class="inline-flex cursor-pointer items-center justify-center rounded border border-primary bg-primary px-8 py-2 text-base font-medium text-white hover:bg-opacity-90">Leave your contact details to learn more
-                        and sign up for MyDoctor Membership.</a> -->
+                    <h2
+                        class="inline-flex cursor-pointer items-center justify-center px-8 py-2 text-base text-medium hover:bg-opacity-90">
+                        Based on your answers, MyDoctor Membership is a perfect solution for your healthcare needs!
+                        Affordable, comprehensive, and always there for you.
+                    </h2>
+                    <a href="form.html"
+                        class="inline-flex cursor-pointer items-center justify-center rounded border border-blue px-6 py-2 text-base text-medium text-blue hover:bg-opacity-90">
+                        Leave your contact details to learn more and sign up for MyDoctor Membership.
+                    </a>
                 </div>
-                <!-- Add other questions here -->
-
                 <div class="btn-toolbar flex items-center space-x-3">
-                    
-                    <input type="submit"
-                    id="submit-button"
-                        class="inline-flex cursor-pointer items-center justify-center rounded border border-primary bg-primary px-8 py-2 text-base font-medium text-white hover:bg-opacity-90"
+                    <input type="submit" id="submit-button"
+                        class="inline-flex cursor-pointer items-center justify-center px-8 py-2 text-base font-medium text-white hover:bg-opacity-90"
+                        value="                           " />
+                    <!-- <a href="form.html" type="submit" id="submit-button"
+                        class="inline-flex cursor-pointer items-center justify-center rounded border border-red px-8 py-2 text-base text-medium text-red hover:bg-opacity-90">
+                        Submit
+                    </a> -->
+                    <input type="submit" id="submit-button"
+                        class="inline-flex cursor-pointer items-center justify-center rounded border border-red px-8 py-2 text-base text-medium text-red hover:bg-opacity-90"
                         value="Submit" />
-                        <input type="button"
-                    id="submit-button"
-                    class="inline-flex cursor-pointer items-center justify-content-end rounded  border-secondary bg-third   text-base font-medium text-white hover:bg-opacity-90"
-                        value="     " />
-                        <button onclick="window.location.href='form.html';" class="inline-flex cursor-pointer items-center rounded border border-primary bg-secondary px-8 py-2 text-base text-xs font-medium text-white hover:bg-opacity-90" id="submit-button">
-                            Request Call Back
-                          </button>
-                    <!-- <input href="your-quiz-link.html" class="inline-flex cursor-pointer items-center justify-content-end rounded border border-primary bg-primary px-2 py-2 text-base font-medium text-white hover:bg-opacity-90" id="submit-button" value="Request Call Back"/> -->
                 </div>
-                
-                
+
+
             </form>
 
 
@@ -449,9 +447,9 @@
 
         function showFeedbackQuestion3(option) {
             const feedbacks = {
-                'A': 'MyDoctor Membership covers over-the-counter medication, easing the financial burden up to ... per year.',
+                'A': 'MyDoctor Membership covers over-the-counter medication, limited to R100 per assist. (6 Assists per Annum).',
                 'B': 'Even if you don\'t currently struggle, having MyDoctor ensures you are covered in the future.',
-                'C': 'MyDoctor Membership covers over-the-counter medication, easing the financial burden up to ... per year.'
+                'C': 'MyDoctor Membership covers over-the-counter medication, limited to R100 per assist. (6 Assists per Annum).'
             };
             document.getElementById('feedback_3').innerText = feedbacks[option];
             questionsAnswered[3] = true;
@@ -497,11 +495,8 @@
             document.querySelector('.final-screen').style.display = allAnswered ? 'block' : 'none';
             document.querySelector('.btn-toolbar').style.display = allAnswered ? 'block' : 'none';
         }
-        document.getElementById('submit-button').onclick = function() {
-            // Clear all form fields
+        document.getElementById('submit-button').onclick = function () {
             document.getElementById('feedbackForm').reset();
-
-            // Hide form and show the final screen
             document.querySelector('.formbold-builder-form').style.display = 'none';
             document.querySelector('.final-screen').style.display = 'block';
             document.getElementById('submit-button').style.display = 'block';

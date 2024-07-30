@@ -865,6 +865,11 @@ video {
   border-color: rgba(var(--primary), var(--tw-border-opacity));
 }
 
+.border-red {
+  --tw-border-opacity: 1;
+  border-color: rgb(237, 28, 36);
+}
+
 .border-stroke {
   --tw-border-opacity: 1;
   border-color: rgb(221 227 236 / var(--tw-border-opacity));
@@ -975,6 +980,17 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+.text-blue {
+  --tw-text-opacity: 1;
+  color: rgb(55, 111, 147);
+}
+
+.text-red {
+  --tw-text-opacity: 1;
+  color: rgb(237, 28, 36);
+}
+
 
 .opacity-0 {
   opacity: 0;
